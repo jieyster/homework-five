@@ -197,6 +197,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding-top: 20px;
   color: white;
   border-radius: 50px;
+  margin-bottom: 106px;
 }
 
 @media screen and (max-width: 900px) {
@@ -235,12 +236,19 @@ h1, h2, h3, h4, h5, h6, p {
   background-size: cover;
   background-position: center;
   font-family: "Proxima";
+  font-weight: lighter;
+  padding-top: 48px;
 }
 .pics .box h1 {
   font-size: 60px;
+  font-family: "Proxima";
+  font-weight: lighter;
 }
 .pics .box h2 {
   font-size: 30px;
+  font-family: "Proxima";
+  font-weight: lighter;
+  margin-top: -20px;
 }
 .pics .box .learn {
   background-color: #79ADDC;
