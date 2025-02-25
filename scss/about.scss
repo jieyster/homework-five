@@ -1,0 +1,136 @@
+.nav2 {
+    width: 100%;
+    height: 90px;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    nav {
+        height: 90px;
+        background-color: white;
+        border-bottom: solid 2px black;
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10%;
+        color: #79ADDC;
+        width: 64%;
+    
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 0 20.5px 0 20.5px;
+        }
+    
+        
+    }
+    }
+
+.about {
+    max-width: 980px;
+    min-height: 200px;
+    margin: 0 auto;
+    padding-top: 99.5px;
+
+    p {
+        font-family: "Gills";
+        font-size: 16px;
+        letter-spacing: 1.5px;
+    }
+
+    h1 {
+        margin-bottom: 36.5px;
+        font-family: "Proxima";
+        text-decoration: underline 2px;
+        font-weight: lighter;
+        letter-spacing: 5px;
+        text-underline-offset: 10px;
+        font-size: 60px;
+    }
+
+    h2 {
+        margin-bottom: 36.5px;
+        font-family: "Proxima";
+        text-decoration: underline 2px;
+        font-weight: lighter;
+        letter-spacing: 5px;
+        text-underline-offset: 10px;
+        font-size: 40px;
+    }
+
+    .top-container {
+        margin-bottom: 99.5px;
+    }
+    .bottom-container{
+        min-height: 200px;
+        // background-color: blueviolet;
+        margin-bottom: 180px;
+
+        .quote {
+            max-width: 676px;
+            min-height: 150px;
+            // background-color: lightblue;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 36.5px;
+            // justify-content: space-between;
+
+            .quote-image-holder {
+                width: 260px;
+                height: 150px;
+                // background-color: lightcoral;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .quote-text-author {
+                width: 385px;
+                height: 150px;
+                // background-color: lightgreen;
+                margin: auto;
+                position: relative;
+                
+                p {
+                    font-size: 16px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-style: italic;
+                }
+
+                .author {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    color: #79ADDC;
+                    font-family: "Proxima";
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+
+
+
+    @media screen and (max-width: 1170px) {
+        .about {
+            padding-left: 10px;
+            padding-right: 10px;
+            justify-content: center;
+
+            .quote {
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+        .nav nav{
+            line-height: 25px;
+            min-width: 450px;
+        }
+    }

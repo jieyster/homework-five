@@ -1,0 +1,44 @@
+@use 'variables' as v;
+
+.photo-container {
+    height: v.$photo-container-height;
+    background-color: pink;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: white;
+        font-family: "Proxima";
+        font-size: 60px;
+        font-weight: 100;
+        margin-bottom: 40px;
+        margin-top: 80px;
+    }
+
+        h5 {
+            color: white;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: lighter;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: -15px;
+        }
+
+    .read {
+        background-color: #79ADDC;
+        width: 121px;
+        color: white;
+        font-size: 15px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}

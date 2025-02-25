@@ -1,0 +1,403 @@
+@font-face {
+  font-family: "Proxima";
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: "Gills";
+  src: url(../fonts/GillSans.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 500px;
+  font-family: "Gills";
+}
+
+.photo-container {
+  height: 500px;
+  background-color: pink;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.photo-container h1 {
+  color: white;
+  font-family: "Proxima";
+  font-size: 60px;
+  font-weight: 100;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+.photo-container h5 {
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: lighter;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: -15px;
+}
+.photo-container .read {
+  background-color: #79ADDC;
+  width: 121px;
+  color: white;
+  font-size: 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.nav {
+  width: 100%;
+  position: relative;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.nav nav {
+  height: 90px;
+  border-bottom: solid 2px #fff;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+  color: #79ADDC;
+  width: 64%;
+}
+.nav nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 20.5px 0 20.5px;
+}
+
+@media screen and (max-width: 1170px) {
+  .nav nav {
+    line-height: 25px;
+    min-width: 450px;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container .booking {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 818px;
+}
+.container h1 {
+  font-size: 60px;
+  font-family: "Proxima";
+  margin-top: 50px;
+}
+.container .top-inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container input {
+  border: solid 1px #79ADDC;
+  height: 58px;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.container .small {
+  width: 344px;
+}
+.container .big {
+  width: 453px;
+}
+.container .check {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  width: 100%;
+}
+.container .check .in, .container .check .out {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.container .check .cal {
+  position: absolute;
+  top: 37px;
+  right: 20.5px;
+}
+.container .check p {
+  width: 120px;
+  margin-top: 37px;
+  min-width: 100px;
+}
+.container .check input {
+  width: 698px;
+}
+.container .room {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .room p {
+  width: 120px;
+  margin-top: 37px;
+}
+.container .room input {
+  width: 103px;
+}
+.container .room .sect {
+  display: flex;
+  position: relative;
+}
+.container .room .sect .down {
+  position: absolute;
+  top: 34px;
+  right: 10.9px;
+  font-size: 24px;
+}
+.container .message {
+  width: 100%;
+  text-align: center;
+}
+.container .message input {
+  width: 818px;
+  height: 192px;
+  padding-bottom: 152px;
+  margin-bottom: 37px;
+}
+.container .message p {
+  width: 100%;
+  background-color: #79ADDC;
+  height: 61px;
+  padding-top: 20px;
+  color: white;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .container .booking {
+    width: 90%;
+  }
+  .container .big {
+    width: 100%;
+  }
+  .container .small {
+    width: 100%;
+  }
+  .container .room {
+    display: inline;
+  }
+  .container .down {
+    left: 200px;
+  }
+  .container .message input {
+    width: 100%;
+  }
+}
+.pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -43px;
+  padding: 0 231px;
+  color: white;
+}
+.pics .box {
+  width: 236px;
+  height: 304px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Proxima";
+}
+.pics .box h1 {
+  font-size: 60px;
+}
+.pics .box h2 {
+  font-size: 30px;
+}
+.pics .box .learn {
+  background-color: #79ADDC;
+  width: 133px;
+  height: 40px;
+  margin-left: 52px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 56px;
+}
+
+@media screen and (max-width: 1210px) {
+  .pics {
+    padding: 0;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #79ADDC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12%;
+  color: white;
+}
+footer h5 {
+  font-size: 12px;
+  font-family: "Gills";
+  padding-top: 23px;
+}
+footer .icons {
+  display: flex;
+  gap: 21px;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    gap: 20px;
+  }
+}
+.nav2 {
+  width: 100%;
+  height: 90px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.nav2 nav {
+  height: 90px;
+  background-color: white;
+  border-bottom: solid 2px black;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+  color: #79ADDC;
+  width: 64%;
+}
+.nav2 nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0 20.5px 0 20.5px;
+}
+
+.about {
+  max-width: 980px;
+  min-height: 200px;
+  margin: 0 auto;
+  padding-top: 99.5px;
+}
+.about p {
+  font-family: "Gills";
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+.about h1 {
+  margin-bottom: 36.5px;
+  font-family: "Proxima";
+  text-decoration: underline 2px;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  text-underline-offset: 10px;
+  font-size: 60px;
+}
+.about h2 {
+  margin-bottom: 36.5px;
+  font-family: "Proxima";
+  text-decoration: underline 2px;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  text-underline-offset: 10px;
+  font-size: 40px;
+}
+.about .top-container {
+  margin-bottom: 99.5px;
+}
+.about .bottom-container {
+  min-height: 200px;
+  margin-bottom: 180px;
+}
+.about .bottom-container .quote {
+  max-width: 676px;
+  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 36.5px;
+}
+.about .bottom-container .quote .quote-image-holder {
+  width: 260px;
+  height: 150px;
+}
+.about .bottom-container .quote .quote-image-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.about .bottom-container .quote .quote-text-author {
+  width: 385px;
+  height: 150px;
+  margin: auto;
+  position: relative;
+}
+.about .bottom-container .quote .quote-text-author p {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+}
+.about .bottom-container .quote .quote-text-author .author {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #79ADDC;
+  font-family: "Proxima";
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1170px) {
+  .about {
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+  }
+  .about .quote {
+    justify-content: center;
+    gap: 10px;
+  }
+  .nav nav {
+    line-height: 25px;
+    min-width: 450px;
+  }
+}
